@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Money</title>
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/f053a918de.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="m-12">
+  <div class="flex gap-4">
+    <div>
+      <img src="/Screenshot 2023-02-16 162959.jpg" alt="">
+    </div>
+    <div>
+      <!-- income and income input field -->
+      <div>
+        <h1 class="text-3xl text-center font-semibold mb-4">Income:</h1>
+        <div class="flex gap-4">
+          <h1>Income:</h1>
+          <input id="income-field" type="text" class="border-2 border-solid border-slate-200 rounded-md px-6"
+            placeholder="10000">
+        </div>
+      </div>
+
+
+      <!-- expenses area food, rent, clothes -->
+      <h1 class="text-3xl text-center font-semibold mb-4 mt-4">Expenses:</h1>
+      <div class="flex  gap-4 items-center">
+        <h1>Food:</h1>
+        <input id="food-field" type="text" class="border-2 border-solid border-slate-200 rounded-md mt-2 px-6"
+          placeholder="3000">
+      </div>
+      <div class="flex gap-4 items-center">
+        <h1>Rent:</h1>
+        <input id="rent-field" type="text" class="border-2 border-solid border-slate-200 rounded-md mt-2 px-6"
+          placeholder="2000">
+      </div>
+      <div class="grid grid-cols-2 gap-2 items-center">
+        <h1>Clothes:</h1>
+        <input id="clothes-field" type="text" class="border-2 border-solid border-slate-200 rounded-md mt-2 px-6"
+          placeholder="500">
+      </div>
+
+      <!-- calculate button -->
+      <button id="calculate-btn"
+        class="text-white font-medium w-28 flex items-center mx-auto bg-sky-500 hover:bg-blue-400 rounded-lg text-center p-2 mt-2 ">Calculate</button>
+
+      <!-- total expenses and balance area -->
+      <div class="flex flex-col items-center mt-2 font-semibold">
+        <h1 class="text-lg mt-4">Total Expenses:$<span id="total-expenses" class="ml-2">0</span></h1>
+        <h1 class="text-lg mt-1">Balance:$<span id="balance" class="ml-2">0</span></h1>
+      </div>
+
+
+
+      <!-- saving area save input field and save button -->
+      <div>
+        <div class="grid grid-cols-3 gap-2 items-center">
+          <div class="flex items-center">
+            <h1 class="text-2xl">save:</h1>
+            <input id="save-field" type="text" class="w-28 border-2 border-solid border-slate-200 rounded-md px-4 mt-2"
+              placeholder="20">
+          </div>
+          <div class="flex justify-center">
+            <div class="">
+              <i class="fa-solid fa-percent mr-2"></i>
+              <button id="save-btn"
+                class="text-white font-medium w-28 bg-sky-500 hover:bg-blue-400 rounded-lg text-center p-2 mt-2 ">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- saving amount and remaining balance -->
+      <div class="flex flex-col items-center mt-4 font-semibold">
+        <h1 class="text-xl">Saving Amount:$<span id="saving-amount" class="ml-2">0</span></h1>
+        <h1 class="text-xl">Remaining Balance:$<span id="remaining-balance" class="ml-2">0</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- js link  -->
+  <script src="/utilities.js"></script>
+</body>
+
+</html>
